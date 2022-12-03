@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 605503547036563356, guid: c57dc84ae8e550c47bd148e69ae7756e, type: 3}
+  musicManager: {fileID: 1390285345966055712, guid: d900ab289f29b63458adc77186b65940,
+    type: 3}
