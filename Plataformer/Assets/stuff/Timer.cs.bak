@@ -1,0 +1,78 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Diagnostics;
+
+public class Timer : MonoBehaviour
+{
+    public Text timerText;
+    private System.DateTime startTime;
+    public bool ended = false;
+    public static System.Diagnostics.Stopwatch sw;
+    public static Timer timer;
+    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // startTime = System.DateTime.Now;
+        if (sw == null)
+        {
+            sw = new Stopwatch();
+            sw.Start();
+        }
+
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Timer");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            // guarda en PlayerPrefs el nivel actual
+            if (scene.name != "Actual_End" || scene.name != "Menu")
+            {
+                PlayerPrefs.SetInt("CurrentLevel", SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("CurrentLevel", 1);
+            }
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        if (ended)
+            return;
+
+
+        System.TimeSpan diff = sw.Elapsed;
+        string minutes = (diff.Minutes).ToString("0#");
+        string seconds = (diff.Seconds).ToString("0#");
+        string miliseconds = (diff.Milliseconds).ToString("00#");
+
+        timerText.text = minutes + ":" + seconds + ":" + miliseconds;
+
+        if (scene.name == "Actual_End")
+        {
+            ended = true;
+            timerText.color = Color.red;
+        }
+    }
+
+    public void end()
+    {
+        ended = true;
+        timerText.color = Color.red;
+    }
+}
