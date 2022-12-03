@@ -727,8 +727,8 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Build: 1
-    Collab: 1
+    Build: 0
+    Collab: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -742,9 +742,9 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId:
+  cloudProjectId: 5088f947-e2cd-4d61-8c62-eaefc4212f64
   framebufferDepthMemorylessMode: 0
-  projectName: Plataformer
+  projectName: Jump Marathon
   organizationId: neoplayzgames
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
