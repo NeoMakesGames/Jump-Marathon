@@ -8,7 +8,7 @@ public class keymanager : MonoBehaviour
 
     public int keysNeeded = 0;
 
-    private int totalKeys = 0;
+    public int totalKeys = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

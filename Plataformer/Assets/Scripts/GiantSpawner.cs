@@ -20,12 +20,22 @@ public class GiantSpawner : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Destroy(otherEnemy);
+            if(otherEnemy != null)
+                Destroy(otherEnemy);
+
+            if(giant != null)
+                Instantiate(giant, new Vector2 (GiantX, GiantY), Quaternion.identity);
+
+            if(plataform != null)
+                Instantiate(plataform, new Vector2(levelProgressionX, levelProgressionY), Quaternion.identity);
+
+            if(arrow != null)
+                arrow.SetActive(true);
+
+            if(extraplat != null)
+                extraplat.SetActive(true);
+
             Destroy(gameObject);
-            Instantiate(giant, new Vector2 (GiantX, GiantY), Quaternion.identity);
-            Instantiate(plataform, new Vector2(levelProgressionX, levelProgressionY), Quaternion.identity);
-            arrow.SetActive(true);
-            extraplat.SetActive(true);
         }
     }
 }
