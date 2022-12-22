@@ -35,11 +35,7 @@ public class LevelControl : MonoBehaviour
 
         if (collision.CompareTag("Enemy") && FreeEnemyTwist == true)
         {
-            if (dontWork)
-            {
-
-            }
-            else
+            if (!dontWork)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
