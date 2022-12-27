@@ -13,8 +13,11 @@ public class CompleteCameraController : MonoBehaviour
     void Start()
     {
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
-        player = GameObject.FindWithTag("Player");
-        offset = transform.position - player.transform.position;
+        if(GameObject.FindWithTag("Player") != null)
+            player = GameObject.FindWithTag("Player");
+
+        if(player != null)
+            offset = transform.position - player.transform.position;
     }
 
     private void Update()
@@ -26,6 +29,7 @@ public class CompleteCameraController : MonoBehaviour
     void LateUpdate ()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = new Vector3(player.transform.position.x + offset.x, player.transform.position.y + offset.y, transform.position.z);
+        if(player != null)
+            transform.position = new Vector3(player.transform.position.x + offset.x, player.transform.position.y + offset.y, transform.position.z);
     }
 }

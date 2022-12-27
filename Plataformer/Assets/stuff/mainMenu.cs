@@ -1,17 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour
 {
     public GameObject timer;
     int currentLevel;
+    private Text bestTime;
 
     private void Start()
     {
         if(GameObject.FindGameObjectWithTag("Browser"))
             Destroy(GameObject.FindGameObjectWithTag("Browser"));
+        
+        bestTime = GameObject.FindGameObjectWithTag("Best Time").GetComponent<Text>();
+        if (PlayerPrefs.HasKey("BestTime"))
+        {
+            bestTime.text = "Best Time: " + PlayerPrefs.GetInt("BestMinutes").ToString() + ":" + PlayerPrefs.GetInt("BestSeconds").ToString() + ":" + PlayerPrefs.GetFloat("BestMilliseconds").ToString().Substring(2, 3);
+        }
+        else
+        {
+            bestTime.text = "Best Time: None";
+        }
     }
 
     public void PlayGame ()

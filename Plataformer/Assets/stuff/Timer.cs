@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Diagnostics;
 
 public class Timer : MonoBehaviour
 {
@@ -51,6 +50,23 @@ public class Timer : MonoBehaviour
         else if (ended == true)
         {
             timerText.color = new Color(1, 0, 0, 1);
+
+            if(PlayerPrefs.HasKey("BestTime"))
+            {
+                if (PlayerPrefs.GetInt("BestMinutes") * 60 + PlayerPrefs.GetInt("BestSeconds") + PlayerPrefs.GetFloat("BestMilliseconds") > minutes * 60 + seconds + milliseconds)
+                {
+                    PlayerPrefs.SetInt("BestMinutes", minutes);
+                    PlayerPrefs.SetInt("BestSeconds", seconds);
+                    PlayerPrefs.SetFloat("BestMilliseconds", milliseconds);
+                }
+            }
+            else
+            {
+                PlayerPrefs.SetInt("BestTime", 1);
+                PlayerPrefs.SetInt("BestMinutes", minutes);
+                PlayerPrefs.SetInt("BestSeconds", seconds);
+                PlayerPrefs.SetFloat("BestMilliseconds", milliseconds);
+            }
         }
 
         if (SceneManager.GetActiveScene().name == "Actual_End" || SceneManager.GetActiveScene().name == "Menu")
@@ -72,6 +88,12 @@ public class Timer : MonoBehaviour
             PlayerPrefs.SetInt("Minutes", minutes);
         }
 
-        timerText.text = minutes.ToString() + ":" + seconds.ToString();
+        if(seconds < 10)
+        {
+            timerText.text = minutes.ToString() + ":0" + seconds.ToString();
+        } else
+        {
+            timerText.text = minutes.ToString() + ":" + seconds.ToString();
+        }
     }
 }
