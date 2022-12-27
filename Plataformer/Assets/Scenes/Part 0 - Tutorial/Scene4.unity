@@ -469,7 +469,7 @@ MonoBehaviour:
   retreatDistance: 2.5
   timeBtwShots: 1
   startTimeBtwShots: 1
-  projectile: {fileID: 8769972234825670790, guid: 40c72cc7e0a78d247b1eb9eec7791a04,
+  projectile: {fileID: 993550162178767673, guid: aee37d7aadcacae4f96a2cf24aa2387d,
     type: 3}
 --- !u!50 &234851925
 Rigidbody2D:
@@ -1361,6 +1361,7 @@ GameObject:
   - component: {fileID: 1249009346}
   - component: {fileID: 1249009345}
   - component: {fileID: 1249009344}
+  - component: {fileID: 1249009347}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1433,6 +1434,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249009347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249009343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb4d9bd051a71f48a18edd27bce7c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.85
+  intensity: 1.75
+  blurSize: 0.3
+  blurIterations: 2
+  fastBloomMaterial: {fileID: 2100000, guid: 221340b8b5ad10940ba1646f87e3770c, type: 2}
 --- !u!1 &1288813375
 GameObject:
   m_ObjectHideFlags: 0

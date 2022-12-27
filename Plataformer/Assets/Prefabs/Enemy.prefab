@@ -102,7 +102,7 @@ MonoBehaviour:
   retreatDistance: 2
   timeBtwShots: 1.35
   startTimeBtwShots: 1.25
-  projectile: {fileID: 8769972234825670790, guid: 40c72cc7e0a78d247b1eb9eec7791a04,
+  projectile: {fileID: 993550162178767673, guid: aee37d7aadcacae4f96a2cf24aa2387d,
     type: 3}
 --- !u!50 &1888925164599129152
 Rigidbody2D:
