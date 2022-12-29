@@ -120,8 +120,9 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Projectile"))
         {
+            Screenshake.shake = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            AudioManager.Instance.DeathSound.LoadAudioData();
+            //AudioManager.Instance.DeathSound.LoadAudioData();
         }
     }
 }

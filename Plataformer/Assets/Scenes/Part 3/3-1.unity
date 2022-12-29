@@ -1599,6 +1599,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7023740119707350888, guid: 8c4a9bf8cdfdb894489bde3d9d896710,
+        type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023740119707350888, guid: 8c4a9bf8cdfdb894489bde3d9d896710,
+        type: 3}
+      propertyPath: m_Depth
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 7023740119707350890, guid: 8c4a9bf8cdfdb894489bde3d9d896710,
         type: 3}
       propertyPath: m_Name

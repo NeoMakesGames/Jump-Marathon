@@ -15,6 +15,7 @@ TagManager:
   - Browser
   - Music
   - Best Time
+  - Screen Shaker
   layers:
   - Default
   - TransparentFX

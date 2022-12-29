@@ -12,11 +12,13 @@ public class reloadScene : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !isColliseumVariant)
         {
+            Screenshake.shake = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             AudioManager.Instance.DeathSound.LoadAudioData();
         }
         if (collision.CompareTag("Player") && isColliseumVariant)
         {
+            Screenshake.shake = true;
             PlayerPrefs.SetInt("CurrentLevel", SceneManager.GetActiveScene().buildIndex - 1);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             AudioManager.Instance.DeathSound.LoadAudioData();

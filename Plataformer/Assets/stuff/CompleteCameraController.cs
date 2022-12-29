@@ -9,6 +9,9 @@ public class CompleteCameraController : MonoBehaviour
 
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
+    private float smoothTime = 3f;
+    //public Vector3 velocity = Vector3.zero;
+
     // Use this for initialization
     void Start()
     {
@@ -30,6 +33,9 @@ public class CompleteCameraController : MonoBehaviour
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         if(player != null)
-            transform.position = new Vector3(player.transform.position.x + offset.x, player.transform.position.y + offset.y, transform.position.z);
+        {
+            Vector3 targetPosition = player.transform.position + offset;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothTime * Time.deltaTime);
+        }
     }
 }
