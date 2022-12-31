@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     int scene;
     int currentlevel;
 
+    // Box collider alternative settings
+    // Offset x: -0.001676202 | Offset y: 0.006846666
+    // Size x: 0.9765337 | Size y: 0.9863067
+
     private void Start()
     {
         extraJumps = extraJumpsValue;
