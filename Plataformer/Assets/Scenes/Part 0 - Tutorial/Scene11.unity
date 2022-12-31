@@ -359,8 +359,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229042981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.175114, y: 0.11827561, z: 1.7457807}
-  m_LocalScale: {x: 6.731693, y: 78.758354, z: 2}
+  m_LocalPosition: {x: 10.272, y: 0.008, z: 1.7457807}
+  m_LocalScale: {x: 7.936666, y: 77.34676, z: 2}
   m_Children: []
   m_Father: {fileID: 1592121955}
   m_RootOrder: 1
@@ -542,8 +542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297b9c00a10c1614f830119fcd38dfb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 0.3
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &379615051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 0.96
-  intensity: 1
+  intensity: 0.75
   blurSize: 0.3
   blurIterations: 2
   fastBloomMaterial: {fileID: 2100000, guid: 221340b8b5ad10940ba1646f87e3770c, type: 2}
@@ -746,8 +744,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710077575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.924885, y: 0.11827561, z: 1.7457807}
-  m_LocalScale: {x: 6.731693, y: 78.758354, z: 2}
+  m_LocalPosition: {x: -11.966, y: 0.036, z: 1.7457807}
+  m_LocalScale: {x: 7.2500334, y: 77.031654, z: 2}
   m_Children: []
   m_Father: {fileID: 1592121955}
   m_RootOrder: 0
@@ -1087,8 +1085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297b9c00a10c1614f830119fcd38dfb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 0.3
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!212 &1162384665
 SpriteRenderer:
   m_ObjectHideFlags: 0
