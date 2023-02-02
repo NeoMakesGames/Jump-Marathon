@@ -255,7 +255,7 @@ PrefabInstance:
     - target: {fileID: 2779726555091771940, guid: 42561730e6b153740b99ce2752e8a95d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 927.742
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 8515329787833556062, guid: 42561730e6b153740b99ce2752e8a95d,
         type: 3}
@@ -381,6 +381,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9197540721975896612, guid: 33ea5b785bac4724e9ef756be9849946,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.9001465
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ea5b785bac4724e9ef756be9849946, type: 3}
 --- !u!1001 &246382379
@@ -398,7 +403,7 @@ PrefabInstance:
     - target: {fileID: 3653349479105943297, guid: e44c29b8f792b10468b12d449c8de31d,
         type: 3}
       propertyPath: jumpforce
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3653349479105943297, guid: e44c29b8f792b10468b12d449c8de31d,
         type: 3}

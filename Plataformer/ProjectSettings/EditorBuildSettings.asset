@@ -99,6 +99,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Part 3/3-4.unity
     guid: e263ccf8f928a8b4fafa58b1f3612621
   - enabled: 1
+    path: Assets/Scenes/Part 3/3-Boss Fight.unity
+    guid: 1304e44752da00c4fae8c817abdbaf61
+  - enabled: 1
     path: Assets/Scenes/Part 3/3-End.unity
     guid: a9159eef91e60014385e3fde0a56a775
   - enabled: 1

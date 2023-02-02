@@ -21,7 +21,7 @@ public class RunwayGenerator : MonoBehaviour
 
             if(i == runwayLength)
             {
-                Instantiate(finalObject, new Vector3(runwayPosition.x + 20, runwayPosition.y, runwayPosition.z), transform.rotation);
+                Instantiate(finalObject, new Vector3(runwayPosition.x + 20, runwayPosition.y + 4, runwayPosition.z), transform.rotation);
             }
         }
     }

@@ -16,12 +16,24 @@ public class mainMenu : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("Browser"));
         
         bestTime = GameObject.FindGameObjectWithTag("Best Time").GetComponent<Text>();
-        if (PlayerPrefs.HasKey("BestTime"))
+        if (PlayerPrefs.HasKey("BestTime") && PlayerPrefs.GetInt("BestMinutes") != 999)
         {
             bestTime.text = "Best Time: " + PlayerPrefs.GetInt("BestMinutes").ToString() + ":" + PlayerPrefs.GetInt("BestSeconds").ToString() + ":" + PlayerPrefs.GetFloat("BestMilliseconds").ToString().Substring(2, 3);
         }
         else
         {
+            bestTime.text = "Best Time: None";
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            Debug.Log("Clearing best time");
+            PlayerPrefs.SetInt("BestMinutes", 999);
+            PlayerPrefs.SetInt("BestSeconds", 999);
+            PlayerPrefs.SetFloat("BestMilliseconds", 999);
             bestTime.text = "Best Time: None";
         }
     }
