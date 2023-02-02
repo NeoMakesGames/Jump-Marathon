@@ -139,6 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &103674804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3167768365463220572, guid: b2f021fe943051e459decaaef57f5131,
@@ -195,7 +197,7 @@ PrefabInstance:
     - target: {fileID: 3631767393537901880, guid: 33ea5b785bac4724e9ef756be9849946,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3631767393537901880, guid: 33ea5b785bac4724e9ef756be9849946,
         type: 3}
@@ -262,6 +264,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9197540721975896612, guid: 33ea5b785bac4724e9ef756be9849946,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.9001465
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ea5b785bac4724e9ef756be9849946, type: 3}
 --- !u!1001 &364850263
@@ -294,7 +301,7 @@ PrefabInstance:
     - target: {fileID: 7023740119707350895, guid: 8c4a9bf8cdfdb894489bde3d9d896710,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7023740119707350895, guid: 8c4a9bf8cdfdb894489bde3d9d896710,
         type: 3}
@@ -446,7 +453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451032806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -617,7 +624,7 @@ PrefabInstance:
     - target: {fileID: 6602631075920021988, guid: 019c85206e3d23847861bba7b96057b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6602631075920021988, guid: 019c85206e3d23847861bba7b96057b7,
         type: 3}
@@ -693,6 +700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!1001 &696162058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -810,6 +819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &724295247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3167768365463220572, guid: b2f021fe943051e459decaaef57f5131,
@@ -871,7 +882,7 @@ PrefabInstance:
     - target: {fileID: 8741650162487669539, guid: 011b4d83403a6274ba35b011ada8b636,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8741650162487669539, guid: 011b4d83403a6274ba35b011ada8b636,
         type: 3}
@@ -924,6 +935,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!1001 &970077677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1016,6 +1029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &1138766836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3167768365463220572, guid: b2f021fe943051e459decaaef57f5131,
@@ -1040,6 +1055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &1237429939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 629959453013984336, guid: fb48b3df13230e94c9a6a48fae720967,
@@ -1168,6 +1185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &1527615170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3167768365463220572, guid: b2f021fe943051e459decaaef57f5131,
@@ -1219,7 +1238,7 @@ PrefabInstance:
     - target: {fileID: 990350549155612277, guid: 2e2713e0157f1c046861984e6edab772,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 990350549155612277, guid: 2e2713e0157f1c046861984e6edab772,
         type: 3}
@@ -1303,7 +1322,7 @@ PrefabInstance:
     - target: {fileID: 3653349479105943298, guid: e44c29b8f792b10468b12d449c8de31d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3653349479105943298, guid: e44c29b8f792b10468b12d449c8de31d,
         type: 3}
@@ -1387,7 +1406,7 @@ PrefabInstance:
     - target: {fileID: 6627971804921826537, guid: f7c038c8e94af7e4b916ecf94eb3f249,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6627971804921826537, guid: f7c038c8e94af7e4b916ecf94eb3f249,
         type: 3}
@@ -1424,6 +1443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &1695157162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3167768365463220572, guid: b2f021fe943051e459decaaef57f5131,
@@ -1480,7 +1501,7 @@ PrefabInstance:
     - target: {fileID: 4949765428603189057, guid: 5c17ea3d87809b84b84a51a0ad95d860,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4949765428603189057, guid: 5c17ea3d87809b84b84a51a0ad95d860,
         type: 3}
@@ -1935,6 +1956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!1001 &3651403510273882826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2300,6 +2323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7224d409d8d122f4cb2d13c53e465ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomizeEveryInterval: 0
+  interval: 3
 --- !u!4 &8548330394589157788
 Transform:
   m_ObjectHideFlags: 0
