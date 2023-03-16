@@ -23,7 +23,19 @@ public class pauseMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if(Screen.fullScreen == true)
+            {
+                Screen.fullScreen = false;
+            }
+            else
+            {
+                Screen.fullScreen = true;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown(KeyCode.P))
         {
             if (gameIsPaused)
             {

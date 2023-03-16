@@ -226,12 +226,12 @@ PrefabInstance:
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: timeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
@@ -941,12 +941,12 @@ PrefabInstance:
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: timeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
@@ -1851,12 +1851,12 @@ PrefabInstance:
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: timeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
@@ -1966,12 +1966,12 @@ PrefabInstance:
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: timeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.1
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 6490396701832654326, guid: ddb003559da28c34dbbde4b9c92dbd2f,
         type: 3}
