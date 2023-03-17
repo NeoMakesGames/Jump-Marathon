@@ -12,6 +12,7 @@ public class PreFinaleJim : MonoBehaviour
     public float teleportInterval; // interval between teleports
     public float teleportRadius; // radius within which to teleport
     public GameObject teleportParticles; // particle system to emit before teleporting
+    public float minDistance = 4;
 
     public bool fixedTeleports = false;
     public Transform[] fixedTeleportLocations;
@@ -54,31 +55,19 @@ public class PreFinaleJim : MonoBehaviour
                 // Emit particle effect before teleporting
                 Instantiate(teleportParticles, transform.position, Quaternion.identity, transform);
 
-                // Teleport to a random location
-                Vector2 randomPos = (Random.insideUnitCircle * teleportRadius) + (Vector2)player.position;
-                while (Vector2.Distance(randomPos, player.position) < stoppingDistance + 1.5f) {
-                    randomPos = (Random.insideUnitCircle * teleportRadius) + (Vector2)player.position;
-                }
-                transform.position = new Vector3(randomPos.x, randomPos.y, 0);
+                // Teleport to a random location. Also make sure the x coordinate is less than the player's x coordinate.
+                Vector2 randomPos = new Vector2(Random.Range(-1, teleportRadius * 1.5f), 6);
 
-                //Debug.Log("Teleported to " + (player.position.x - randomPos.x) * -1 + ", " + (player.position.y - randomPos.y) * -1);
+                transform.position = new Vector2(randomPos.x + player.position.x, randomPos.y + player.position.y);
 
-                transform.position = new Vector3(randomPos.x, randomPos.y, 0);
-
+                GameObject newGO = Instantiate(projectile, transform.position, Quaternion.identity);
+                //Duplicate Scale
+                newGO.transform.localScale *= Random.Range(1f, 2f);
 
                 teleportTimer = teleportInterval;
             }
 
-            if (timeBtwShots <= 0)
-            {
-                Instantiate(projectile, transform.position, Quaternion.identity);
-                timeBtwShots = startTimeBtwShots;
-
-            }
-            else
-            {
-                timeBtwShots -= Time.deltaTime;
-            }
+            teleportInterval -= Time.deltaTime * .01f;
         } else {
             //Teleport to the closest fixed teleport location to the player and instatiate particles. If it's already at the closest location, just shoot. Ignore variables like stoppingDistance and retreatDistance.
             for(int i = 0; i < fixedTeleportLocations.Length; i++)
@@ -109,5 +98,10 @@ public class PreFinaleJim : MonoBehaviour
                 timeBtwShots -= Time.deltaTime;
             }
         }
+    }
+
+    IEnumerator wait(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }

@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gO: {fileID: 7090469983008958102, guid: e523518a6c0b7b04b883bf12317848ac, type: 3}
-  amount: 6
+  amount: 7
 --- !u!114 &723691048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,8 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b048da87581c2f45b4fbbf97c63dcfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xOffset: 7.5
-  smoothTime: 0.75
+  xOffset: 15
+  smoothTime: 0.6
 --- !u!61 &723691049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045443797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 551656147}
@@ -964,10 +964,12 @@ MonoBehaviour:
   runwayObjectPrefab: {fileID: 4181553058518617204, guid: 3e0dbbe0cc60b62458142acb3dccbc51,
     type: 3}
   runwayLength: 25
-  yVariability: 2
+  yVariability: 2.5
   xVariability: 6
   finalObject: {fileID: 3060015948278133006, guid: d7a9f888bfd216041834900c70bb1745,
     type: 3}
+  secondVariation: 1
+  yVariability2: 0
 --- !u!4 &1362631880
 Transform:
   m_ObjectHideFlags: 0
@@ -976,7 +978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362631878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.9, y: -3.5, z: 0}
+  m_LocalPosition: {x: 6, y: -3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

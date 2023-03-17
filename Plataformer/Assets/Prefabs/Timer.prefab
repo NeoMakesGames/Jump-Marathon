@@ -151,6 +151,8 @@ MonoBehaviour:
   timerText: {fileID: 605503547243488876}
   ended: 0
   started: 1
+  minutes: 0
+  seconds: 0
   exists: 1
 --- !u!114 &605503547243488876
 MonoBehaviour:

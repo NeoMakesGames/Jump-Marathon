@@ -25,7 +25,7 @@ public class Wall : MonoBehaviour
     {
         currentPosition = player.transform.position.y;
         float yDifference = currentPosition - previousPosition;
-        if (Mathf.Abs(yDifference) >= 5)
+        if (Mathf.Abs(yDifference) >= 4)
         {
             Spawn(currentPosition - 9, currentPosition + 9, amount, gO);
             previousPosition = currentPosition;
