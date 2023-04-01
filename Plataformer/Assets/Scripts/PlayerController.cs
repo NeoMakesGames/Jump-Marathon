@@ -13,8 +13,11 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
-    private int extraJumps;
+    public int extraJumps;
     public int extraJumpsValue;
+    private GameObject eyes;
+    private Color jumpColor;
+    public Material trailMaterial;
 
     int scene;
     int currentlevel;
@@ -27,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        eyes = GameObject.Find("Eyes");
     }
 
     private void FixedUpdate()
@@ -40,6 +44,16 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         GetPlayerInputs();
+        jumpColor = new Color(0, .8f * ((float)extraJumps / (float)extraJumpsValue), 1, 1);
+        jumpColor.g = Mathf.Lerp(0.8f, 0f, (float)(extraJumpsValue - extraJumps) / (float)extraJumpsValue);
+        trailMaterial.SetColor("_Color", jumpColor);
+        eyes.GetComponent<SpriteRenderer>().color = Color.Lerp(eyes.GetComponent<SpriteRenderer>().color, jumpColor, Time.deltaTime * 5f);;
+        float maxTrailTime = 0.25f;
+        float minTrailTime = 0f;
+        float targetTrailTime = Mathf.Lerp(minTrailTime, maxTrailTime, (float)extraJumps / extraJumpsValue);
+        float trailLerpTime = 5f; // Adjust this to control the speed of the transition
+        float currentTrailTime = Mathf.Lerp(gameObject.GetComponent<TrailRenderer>().time, targetTrailTime, Time.deltaTime * trailLerpTime);
+        gameObject.GetComponent<TrailRenderer>().time = currentTrailTime;
     }
 
     private void GetPlayerInputs ()
@@ -48,7 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
-        else
+        else if (moveInput > 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
